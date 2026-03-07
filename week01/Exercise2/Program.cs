@@ -9,7 +9,7 @@ class Program
         int mark = int.Parse(marks);
         if (mark >= 90)
         {
-            if (mark < 93)
+            if (mark <= 93)
             {
                 Console.WriteLine("Grade is -A");
             }
@@ -20,11 +20,11 @@ class Program
         }
         else if (mark >= 80)
         {
-            if (mark < 83)
+            if (mark <= 83)
             {
                 Console.WriteLine("Grade is -B");
             }
-            else if (mark > 87)
+            else if (mark >= 87)
             {
                 Console.WriteLine("Grade is +B");
             }
@@ -35,11 +35,11 @@ class Program
         }
         else if (mark >= 70)
         {
-            if (mark < 73)
+            if (mark <= 73)
             {
                 Console.WriteLine("Grade is -C");
             }
-            else if (mark > 77)
+            else if (mark >= 77)
             {
                 Console.WriteLine("Grade is +C");
             }
@@ -50,11 +50,11 @@ class Program
         }
         else if (mark >= 60)
         {
-            if (mark < 63)
+            if (mark <= 63)
             {
                 Console.WriteLine("Grade is -D");
             }
-            else if (mark > 67)
+            else if (mark >= 67)
             {
                 Console.WriteLine("Grade is +D");
             }
@@ -65,7 +65,15 @@ class Program
         }
         else
         {
-            Console.WriteLine("Grade is E");
+            Console.WriteLine("Grade is F");
+        }
+        if (mark >= 70)
+        {
+            Console.WriteLine("You passed!");
+        }
+        else
+        {
+            Console.WriteLine("You failed, try again next time.");
         }
     }
 }
