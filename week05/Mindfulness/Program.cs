@@ -1,6 +1,6 @@
 using System;
 
-// EXCEEDED REQUIREMENTS:
+
 // - Added spinner animation using backspaces
 // - Added a session counter to track completed activities
 
